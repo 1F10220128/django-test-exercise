@@ -113,3 +113,10 @@ class TodoViewTestCase(TestCase):
         response = client.get('/1/')
 
         self.assertEqual(response.status_code, 404)
+
+    def test_delete_task(self):
+        task = Task(title="task")
+        client = Client()
+        response = client.post(reverse("delete", args=(task.pk,)))
+
+        self.assertEqual(response.status_code, 302)
