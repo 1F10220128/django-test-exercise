@@ -1,0 +1,8 @@
+h1{
+    background-color: black;
+    color: white;
+}
+
+li{
+    background: linear-gradient(transparent 80%, #f5ff00 20%);
+}
