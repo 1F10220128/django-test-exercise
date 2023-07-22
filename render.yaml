@@ -6,7 +6,7 @@ databases:
 
 services:
   - type: web
-    name: seven
+    name: django-7-web
     env: python
     plan: free
     branch: main
